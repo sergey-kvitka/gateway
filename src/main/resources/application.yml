@@ -1,2 +1,17 @@
 server:
   port: 7000
+
+rest:
+  deal:
+    url: http://localhost:8020
+    endpoints:
+      calculate: deal/calculate/{applicationId}
+      code: deal/document/{applicationId}/code
+      send: deal/document/{applicationId}/send
+      sign: deal/document/{applicationId}/sign
+
+  application:
+    url: http://localhost:7900
+    endpoints:
+      application: application
+      offer: application/offer
